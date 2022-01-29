@@ -7,18 +7,21 @@ namespace Core
         private GameView gameView;
         private LoadingSystem loadingSystem;
         private InputSystem inputSystem;
+        private CameraSystem cameraSystem;
         private PlayerMovementSystem playerMovementSystem;
         
         public GameState(
             GameView gameView,
             LoadingSystem loadingSystem,
             InputSystem inputSystem,
+            CameraSystem cameraSystem,
             PlayerMovementSystem playerMovementSystem
         )
         {
             this.gameView = gameView;
             this.loadingSystem = loadingSystem;
             this.inputSystem = inputSystem;
+            this.cameraSystem = cameraSystem;
             this.playerMovementSystem = playerMovementSystem;
         }
 
@@ -27,12 +30,14 @@ namespace Core
             base.InitState();
             gameView.ShowView();
             inputSystem.EnableInput();
+            cameraSystem.StartCamera();
         }
 
         public override void UpdateState()
         {
             base.UpdateState();
             inputSystem.UpdateInput();
+            cameraSystem.UpdateCamera();
             playerMovementSystem.UpdateMovement(inputSystem);
         }
 

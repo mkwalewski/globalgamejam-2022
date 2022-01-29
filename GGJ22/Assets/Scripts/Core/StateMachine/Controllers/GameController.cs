@@ -15,6 +15,9 @@ namespace Core
 
         [SerializeField]
         private InputSystem inputSystem;
+
+        [SerializeField]
+        private CameraSystem cameraSystem;
         
         [SerializeField]
         private PlayerMovementSystem playerMovementSystem;
@@ -25,6 +28,7 @@ namespace Core
                 gameView,
                 loadingSystem,
                 inputSystem,
+                cameraSystem,
                 playerMovementSystem
             );
         }
