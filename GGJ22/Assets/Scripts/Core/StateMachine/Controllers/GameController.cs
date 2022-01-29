@@ -21,6 +21,9 @@ namespace Core
         
         [SerializeField]
         private PlayerMovementSystem playerMovementSystem;
+        
+        [SerializeField]
+        private PlayerDataSystem playerDataSystem;
 
         protected override void InjectReferences()
         {
@@ -29,7 +32,8 @@ namespace Core
                 loadingSystem,
                 inputSystem,
                 cameraSystem,
-                playerMovementSystem
+                playerMovementSystem,
+                playerDataSystem
             );
         }
 

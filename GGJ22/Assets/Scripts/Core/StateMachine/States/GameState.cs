@@ -9,13 +9,15 @@ namespace Core
         private InputSystem inputSystem;
         private CameraSystem cameraSystem;
         private PlayerMovementSystem playerMovementSystem;
+        private PlayerDataSystem playerDataSystem;
         
         public GameState(
             GameView gameView,
             LoadingSystem loadingSystem,
             InputSystem inputSystem,
             CameraSystem cameraSystem,
-            PlayerMovementSystem playerMovementSystem
+            PlayerMovementSystem playerMovementSystem,
+            PlayerDataSystem playerDataSystem
         )
         {
             this.gameView = gameView;
@@ -23,19 +25,24 @@ namespace Core
             this.inputSystem = inputSystem;
             this.cameraSystem = cameraSystem;
             this.playerMovementSystem = playerMovementSystem;
+            this.playerDataSystem = playerDataSystem;
         }
 
         public override void InitState()
         {
             base.InitState();
+            int coins = CoinsValues.INIT_VALUE;
             gameView.ShowView();
+            gameView.UpdateCoins(coins);
             inputSystem.EnableInput();
             cameraSystem.StartCamera();
+            playerDataSystem.SetCoins(coins);
         }
 
         public override void UpdateState()
         {
             base.UpdateState();
+            gameView.UpdateCoins(playerDataSystem.GetCoins());
             inputSystem.UpdateInput();
             cameraSystem.UpdateCamera();
             playerMovementSystem.UpdateMovement(inputSystem);
