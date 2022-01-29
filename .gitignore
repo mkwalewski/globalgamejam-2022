@@ -1,0 +1,94 @@
+# =============== #
+# Unity generated #
+# =============== #
+/GGJ22/[Ll]ibrary/
+/GGJ22/[Tt]emp/
+/GGJ22/[Oo]bj/
+/GGJ22/[Bb]uild/
+/GGJ22/[Bb]uilds/
+/GGJ22/[Ll]ogs/
+/GGJ22/Assets/AssetStoreTools*
+/GGJ22/UnityPackageManager
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+/GGJ22/.consulo/
+/GGJ22/.vs/
+/GGJ22/ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.tmp
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.vscode
+
+# ====================== #
+# Gradle cache directory #
+# ====================== #
+/GGJ22/.gradle/
+
+# ============================= #
+# Unity3D generated meta files  #
+# ============================= #
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ======================================== #
+# Unity3D generated file on crash reports  #
+# ======================================== #
+sysinfo.txt
+*.stackdump
+
+# ======================================== #
+# Crashlytics generated file               #
+# ======================================== #
+crashlytics-build.properties
+
+# ==================== #
+# Builds               #
+# ==================== #
+*.apk
+*.unitypackage
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# =============== #
+#      Other      #
+# =============== #
+*.blend1
+*.orig
+*.orig.meta
+*.blend1.meta
+
+# =============== #
+#    Whiteboard   #
+# =============== #
+GGJ22.rar
+GGJ22.7z
+
+
+# =============== #
+#       Rider	  #
+# =============== #
+/GGJ22/.idea/
