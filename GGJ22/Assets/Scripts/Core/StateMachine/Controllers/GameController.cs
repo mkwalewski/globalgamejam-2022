@@ -13,11 +13,19 @@ namespace Core
         [SerializeField]
         private LoadingSystem loadingSystem;
 
+        [SerializeField]
+        private InputSystem inputSystem;
+        
+        [SerializeField]
+        private PlayerMovementSystem playerMovementSystem;
+
         protected override void InjectReferences()
         {
             gameState = new GameState(
                 gameView,
-                loadingSystem
+                loadingSystem,
+                inputSystem,
+                playerMovementSystem
             );
         }
 
