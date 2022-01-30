@@ -15,9 +15,15 @@ namespace Core
 
         [SerializeField]
         private InputSystem inputSystem;
+
+        [SerializeField]
+        private CameraSystem cameraSystem;
         
         [SerializeField]
         private PlayerMovementSystem playerMovementSystem;
+        
+        [SerializeField]
+        private PlayerDataSystem playerDataSystem;
 
         protected override void InjectReferences()
         {
@@ -25,7 +31,9 @@ namespace Core
                 gameView,
                 loadingSystem,
                 inputSystem,
-                playerMovementSystem
+                cameraSystem,
+                playerMovementSystem,
+                playerDataSystem
             );
         }
 
