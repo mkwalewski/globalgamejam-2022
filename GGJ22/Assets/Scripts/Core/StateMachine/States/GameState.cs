@@ -37,7 +37,6 @@ namespace Core
             inputSystem.EnableInput();
             cameraSystem.StartCamera();
             playerDataSystem.SetCoins(coins);
-            playerMovementSystem.StartMovement();
         }
 
         public override void UpdateState()
